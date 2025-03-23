@@ -123,5 +123,24 @@
   */
 
   int parentesisBalanceados(char *cadena) {
+    Stack* PAper = create_stack();
+    int cont = 0;
+    while (cadena[cont] != '\0'){
+      if(cadena[cont] == '(' || cadena[cont] == '[' || cadena[cont] == '{'){
+        push(PAper, &cadena[cont] );
+        cont++;
+
+      }
+      else{
+        if((cadena[cont] == '('&& *(char*)top(PAper) == ')' ) ||  
+          (cadena[cont] == '{'&& *(char*)top(PAper) == '}' ) || 
+          (cadena[cont] == '['&& *(char*)top(PAper) == ']' )){
+
+        }
+
+
+    }
+
+    
      return 0;
   }
