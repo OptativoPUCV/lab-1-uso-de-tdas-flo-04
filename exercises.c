@@ -117,13 +117,13 @@ La función verifica si la cadena de entrada tiene sus
 paraéntesis balanceados. Retorna 1 si están balanceados,
 0 en caso contrario.
 */
-/*
+
 int parentesisBalanceados(char *cadena) { 
   Stack* PAper = create_stack();
   int cont = 0;
   while (cadena[cont] != '\0'){
     if(cadena[cont] == '(' || cadena[cont] == '[' || cadena[cont] == '{'){
-      push(PAper, (long*)cadena[cont]);
+      push(PAper, &cadena[cont] );
       cont++;
       
     }
@@ -137,4 +137,4 @@ int parentesisBalanceados(char *cadena) {
     
   }
   
-}*/
+}

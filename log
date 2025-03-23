@@ -102,3 +102,29 @@ test.c:217:9: error: implicit declaration of function ‘parentesisBalanceados�
 cc1: all warnings being treated as errors
 Compilation failed
 356a9eb
+Sun 23 Mar 2025 12:54:05 AM UTC: 
+ exercises.c | 6 +++---
+ 1 file changed, 3 insertions(+), 3 deletions(-)
+In file included from test.c:5:
+exercises.c: In function ‘parentesisBalanceados’:
+exercises.c:131:43: error: comparison between pointer and integer [-Werror]
+  131 |       if(cadena[cont] == '('&& top(PAper) == ')' ||
+      |                                           ^~
+exercises.c:132:42: error: comparison between pointer and integer [-Werror]
+  132 |         cadena[cont] == '{'&& top(PAper) == '}' ||
+      |                                          ^~
+exercises.c:131:29: error: suggest parentheses around ‘&&’ within ‘||’ [-Werror=parentheses]
+  131 |       if(cadena[cont] == '('&& top(PAper) == ')' ||
+      |          ~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~
+exercises.c:133:42: error: comparison between pointer and integer [-Werror]
+  133 |         cadena[cont] == '['&& top(PAper) == ']' ){
+      |                                          ^~
+exercises.c:133:28: error: suggest parentheses around ‘&&’ within ‘||’ [-Werror=parentheses]
+  133 |         cadena[cont] == '['&& top(PAper) == ']' ){
+      |         ~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~
+exercises.c:140:1: error: control reaches end of non-void function [-Werror=return-type]
+  140 | }
+      | ^
+cc1: all warnings being treated as errors
+Compilation failed
+f4e112b
