@@ -530,3 +530,27 @@ exercises.c:115:3: error: expected identifier or ‘(’ before ‘}’ token
 cc1: all warnings being treated as errors
 Compilation failed
 7e17371
+Sun 23 Mar 2025 01:37:42 AM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+exercises.c:103:5: error: unknown type name ‘tack’; did you mean ‘Stack’?
+  103 |     tack* PAux = create_stack();
+      |     ^~~~
+      |     Stack
+exercises.c:103:18: error: initialization of ‘int *’ from incompatible pointer type ‘Stack *’ {aka ‘List *’} [-Werror=incompatible-pointer-types]
+  103 |     tack* PAux = create_stack();
+      |                  ^~~~~~~~~~~~
+exercises.c:103:18: error: initializer element is not constant
+exercises.c:105:5: error: expected identifier or ‘(’ before ‘while’
+  105 |     while(top(P1) != NULL){
+      |     ^~~~~
+exercises.c:110:5: error: expected identifier or ‘(’ before ‘while’
+  110 |     while(top(PAux) != NULL){
+      |     ^~~~~
+exercises.c:115:3: error: expected identifier or ‘(’ before ‘}’ token
+  115 |   }
+      |   ^
+cc1: all warnings being treated as errors
+Compilation failed
+9d413e8

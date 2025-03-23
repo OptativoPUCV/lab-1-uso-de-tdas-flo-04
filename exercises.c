@@ -66,7 +66,7 @@
       elemento = next(L);
     }
 
-     return 0;
+     return sum;
   }
 
   /*
