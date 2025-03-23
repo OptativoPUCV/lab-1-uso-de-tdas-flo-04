@@ -61,12 +61,12 @@
     int sum = 0;
     int* elemento = first(L);
     while(elemento != NULL){
-      int num = *((int*)elemento);
-      sum += num;
+      int*num = (int*)elemento;
+      sum += *num;
       elemento = next(L);
     }
 
-     return sum;
+    return sum;
   }
 
   /*
