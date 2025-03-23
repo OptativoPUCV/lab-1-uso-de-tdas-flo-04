@@ -61,6 +61,7 @@
     int sum = 0;
     void* elemento = first(L);
     while(elemento != NULL){
+      printf("%d ", *((int*)elemento));
       int num = *((int*)elemento);
       sum += num;
       elemento = next(L);
