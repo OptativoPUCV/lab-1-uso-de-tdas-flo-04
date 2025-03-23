@@ -128,9 +128,9 @@ int parentesisBalanceados(char *cadena) {
       
     }
     else{
-      if(cadena[cont] == '('&& &top(PAper) == ')' ||  
-        cadena[cont] == '{'&& &top(PAper) == '}' || 
-        cadena[cont] == '['&& &top(PAper) == ']' ){
+      if(cadena[cont] == '('&& top(PAper) == ')' ||  
+        cadena[cont] == '{'&& top(PAper) == '}' || 
+        cadena[cont] == '['&& top(PAper) == ']' ){
         ;
       }
     }
