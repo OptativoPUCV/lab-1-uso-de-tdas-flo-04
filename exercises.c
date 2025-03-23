@@ -59,9 +59,8 @@
   */
   int sumaLista(List *L) {
     int sum = 0;
-    void* elemento = first(L);
+    int* elemento = first(L);
     while(elemento != NULL){
-      printf("%d ", *((int*)elemento));
       int num = *((int*)elemento);
       sum += num;
       elemento = next(L);
@@ -90,6 +89,7 @@
           aux = next(L);
         }
     }
+    
 
   }
 
