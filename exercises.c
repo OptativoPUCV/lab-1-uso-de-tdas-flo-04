@@ -58,6 +58,14 @@
   retorne la suma de sus elementos.
   */
   int sumaLista(List *L) {
+    int sum = 0;
+    void* elemento = first(L);
+    while(elemento != NULL){
+      int num = *((int*)elemento);
+      sum += num;
+      elemento = next(L);
+    }
+
      return 0;
   }
 
@@ -71,6 +79,16 @@
   */
 
   void eliminaElementos(List*L, int elem){
+    void* aux = first(L);
+    while (aux != NULL){
+        int num = *((int*)aux);
+        if(elem == num){
+          popCurrent(L);
+        }
+        else{
+          aux = next(L);
+        }
+    }
 
   }
 
@@ -81,7 +99,19 @@
   Puedes usar una pila auxiliar.
   */
 
-  void copia_pila(Stack* P1, Stack* P2) {
+  void copia_pila(Stack* P1, Stack* P2) {}
+    tack* PAux = create_stack();
+
+    while(top(P1) != NULL){
+        push(PAux, top(P1));
+        pop(P1);
+    }
+
+    while(top(PAux) != NULL){
+        push(P2, top(PAux));
+        pop(PAux);
+    }
+
   }
 
   /*
