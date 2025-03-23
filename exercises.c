@@ -80,7 +80,7 @@
   */
 
   void eliminaElementos(List*L, int elem){
-    void* aux = first(L);
+    int* aux = first(L);
     while (aux != NULL){
         int num = *((int*)aux);
         if(elem == num){
